@@ -1,6 +1,6 @@
-# example addon for [WATCHED.com](https://www.watched.com)
+# Example addon for WATCHED.com
 
-This addon was created with the [WATCHED javascript SDK](https://github.com/watchedcom/sdk-javascript).
+Example addon which tries to show the functionality of WATCHED.
 
 ## Start the development addon server
 
