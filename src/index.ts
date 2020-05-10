@@ -1,11 +1,11 @@
-import { createWorkerAddon, MovieItem } from "@watchedcom/sdk";
+import { createWorkerAddon, MovieItem, runCli } from "@watchedcom/sdk";
 
-export const exampleAddon = createWorkerAddon({
+const exampleAddon = createWorkerAddon({
   id: "example",
   name: "example",
   version: "0.0.0",
   // Trigger this addon on this kind of items
-  itemTypes: ["movie"],
+  itemTypes: ["movie", "series"],
   requestArgs: [
     // Trigger this addon when an item has a `name` field
     "name",
@@ -168,7 +168,6 @@ exampleAddon.registerActionHandler("source", async (input, ctx) => {
 exampleAddon.addResolveHandler(
   new RegExp("//videocnd.example.com/resolve-example/(.*)"),
   async (match, input, ctx) => {
-    console.warn(match);
     // Normally here a website will be fetched and the video links be extracted.
     // For this tutorial, we again do it with some static data:
     if (match[1] === "tt0807840") {
@@ -222,3 +221,5 @@ exampleAddon.addResolveHandler(
     throw new Error(`Can not resolvelink ${input.url}`);
   }
 );
+
+runCli([exampleAddon]);

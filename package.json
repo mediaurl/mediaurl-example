@@ -4,17 +4,18 @@
   "main": "dist",
   "scripts": {
     "build": "tsc",
-    "start": "watched-sdk start --prod",
-    "develop": "watched-sdk start"
+    "start": "node .",
+    "develop": "ts-node-dev --transpileOnly src"
   },
   "dependencies": {
-    "@watchedcom/sdk": "^0.28.0"
+    "@watchedcom/sdk": "^0.31.1"
   },
   "devDependencies": {
-    "typescript": "^3.8.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
   },
   "husky": {
     "hooks": {
