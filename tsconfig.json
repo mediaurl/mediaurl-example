@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2019",
+    "lib": ["es2020"],
+    "moduleResolution": "node",
     "strictNullChecks": true,
     "outDir": "dist"
   },
