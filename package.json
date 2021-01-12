@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node .",
-    "develop": "ts-node-dev --transpileOnly src"
+    "develop": "ts-node-dev src"
   },
   "dependencies": {
     "@mediaurl/sdk": "1.0.3"
