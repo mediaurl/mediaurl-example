@@ -1,5 +1,5 @@
 {
-  "name": "watched-addon-example",
+  "name": "mediaurl-example",
   "version": "0.0.0",
   "main": "dist",
   "scripts": {
@@ -8,14 +8,14 @@
     "develop": "ts-node-dev --transpileOnly src"
   },
   "dependencies": {
-    "@watchedcom/sdk": "^0.34.1"
+    "@mediaurl/sdk": "1.0.3"
   },
   "devDependencies": {
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.9.7"
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
   },
   "husky": {
     "hooks": {

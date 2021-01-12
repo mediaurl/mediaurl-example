@@ -1,4 +1,4 @@
-import { createWorkerAddon, MovieItem, runCli } from "@watchedcom/sdk";
+import { createWorkerAddon, MovieItem, runCli } from "@mediaurl/sdk";
 
 const exampleAddon = createWorkerAddon({
   id: "example",
