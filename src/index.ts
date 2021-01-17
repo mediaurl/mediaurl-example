@@ -6,7 +6,7 @@ const exampleAddon = createWorkerAddon({
   version: "0.0.0",
   // Trigger this addon on this kind of items
   itemTypes: ["movie", "series"],
-  requestArgs: [
+  triggers: [
     // Trigger this addon when an item has a `name` field
     "name",
     // or trigger it when an item has a `ids.imdb_id` field
