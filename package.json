@@ -8,7 +8,7 @@
     "develop": "ts-node-dev src"
   },
   "dependencies": {
-    "@mediaurl/sdk": "^1.1.0"
+    "@mediaurl/sdk": "^1.2.0"
   },
   "devDependencies": {
     "husky": "^4.3.8",
