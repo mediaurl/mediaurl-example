@@ -1,6 +1,6 @@
-import { createWorkerAddon, MovieItem, runCli } from "@mediaurl/sdk";
+import { createAddon, MovieItem, runCli } from "@mediaurl/sdk";
 
-const exampleAddon = createWorkerAddon({
+const exampleAddon = createAddon({
   id: "example",
   name: "example",
   version: "0.0.0",
@@ -14,7 +14,7 @@ const exampleAddon = createWorkerAddon({
   ],
 });
 
-exampleAddon.registerActionHandler("directory", async (input, ctx) => {
+exampleAddon.registerActionHandler("catalog", async (input, ctx) => {
   // Here should be your website parser script, or an API call to a website to list available items
   const items: MovieItem[] = [
     {
