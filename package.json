@@ -8,7 +8,7 @@
     "develop": "ts-node-dev --transpile-only src"
   },
   "dependencies": {
-    "@mediaurl/sdk": "^2.0.0-alpha.9"
+    "@mediaurl/sdk": "^2.0.0-alpha.10"
   },
   "devDependencies": {
     "lint-staged": "^10.5.4",
