@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node .",
-    "develop": "ts-node-dev --transpile-only src"
+    "develop": "ts-node-dev --transpile-only src",
+    "prepare": "npx simple-git-hooks"
   },
   "dependencies": {
     "@mediaurl/sdk": "^2.0.0-alpha.10"
